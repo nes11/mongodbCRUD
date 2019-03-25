@@ -15,7 +15,7 @@ const getDocuments = async (query) => {
     client.close();
     return result;
   } catch(err) {
-    console.log('error', err)
+    console.log('error', err);
   }
 };
 
@@ -26,4 +26,3 @@ const getDocumentById = async (id) => {
   return res[0];
 };
 
-getDocumentById("5c238900a16fc949c1479830").then(res => console.log(res));

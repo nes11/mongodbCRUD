@@ -14,8 +14,6 @@ const updateDocById = async (dbItemId) => {
     await myFirstCollection.updateOne({ _id: ObjectId(dbItemId) }, { $rename: { status : 'job' } });
     client.close();
   } catch(err) {
-    console.log('error', err)
+    console.log('error', err);
   }
 };
-
-updateDocById("5c238900a16fc949c1479830");

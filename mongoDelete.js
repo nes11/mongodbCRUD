@@ -14,8 +14,7 @@ const deleteDocById = async (dbItemId) => {
     await myFirstCollection.deleteOne({ _id: ObjectId(dbItemId) });
     client.close();
   } catch(err) {
-    console.log('error', err)
+    console.log('error', err);
   }
 };
 
-deleteDocById("5c23891dad814149c634736e");
